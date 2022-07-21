@@ -52,7 +52,7 @@ form.setContent("Is OneKN gay?") //local meme in RuNukkitDev
     .setPositiveButton("Yes")
     .setNegativeButton("Sure");
 
-form.setResponse((p, result) -> {
+form.setHandler((p, result) -> {
     p.sendMessage(result? "I knew it!" : "Quite right :D");
 });
 
